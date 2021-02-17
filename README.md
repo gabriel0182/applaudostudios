@@ -1,2 +1,0 @@
-# TestRP
-Real Page Exam
