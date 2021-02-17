@@ -10,14 +10,16 @@ landing(){
    return this;
     }
              
-search(){
+searchIcon(){
 
-    const searchIcon= cy
+    const icon= cy
     .get('[class="landing-tickers__search"]')
     .get('[data-icon="search"]')
     .contains("search")
-    searchIcon.click({force: true})
-    searchIcon.wait(1000)
+    icon.click({force: true})
+    icon.wait(1000)
+}
+inputSearch(){
     const testData = require("../../fixtures/searchBy.json");
     testData.forEach((testDataRow) => {
       const data = {
@@ -28,10 +30,23 @@ search(){
         .get('.visible-desktop > .bp3-input-group > .bp3-input')
         typeSearch.type(data.name,'{enter}')
       }
-    )
+     )
      return this;
       }
     )}
+
+    pickResult(){
+      const selectResult = cy
+     .get('.landing-tickers__table')
+     .get('tbody > tr > .price-cell')
+     selectResult.click({force:true})
+     selectResult.wait(5000)
+     return this;
+    }
+    verifyURL(){
+      const url = cy.url()
+      url.should('be.equal','https://trading.bitfinex.com/t/LEO:USD?demo=true')
+    }
       
 }
 

@@ -5,18 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^4.12.1",
-    "test": "cypress run",
+    "cypress": "^6.5.0",
     "cypress-cucumber-preprocessor": "^2.5.5",
-    "cypress-xpath": "^1.4.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress-xpath": "^1.4.0",
+    "test": "cypress run"
   },
   "author": "",
   "license": "ISC",
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "step_definitions": "cypress/integration/features/step_definitions/**/"
+    "nonGlobalStepDefinitions": true
   }
 }
