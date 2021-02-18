@@ -18,9 +18,8 @@ When("Remove item inside the shopping cart", () => {
 
 When("Search item", () => {
   shopping.search();
-  
 });
 
 Then("Validate store information", () => {
-  
+  shopping.storeInfo();
 });
