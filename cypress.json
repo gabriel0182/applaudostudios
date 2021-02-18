@@ -3,7 +3,7 @@
     "testFiles": "**/*.{feature,features}",
     "viewportWidth": 1000,
   "screenshotOnRunFailure": false,
-  "video": false,
+  "video": true,
   "numTestsKeptInMemory": 0,
   "responseTimeout": 10000,
   "taskTimeout": 10000,
