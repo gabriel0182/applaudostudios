@@ -22,12 +22,11 @@ class breakingBad {
         expect(resp.body).to.not.eq(null);
         console.log(resp)
         const inforChar = resp.body
-        inforChar.map(item => {})
-        /*console.log('Character name:', resp.body[0].name)
-        console.log('Portrayed:', resp.body[0].portrayed)
-        console.log('------------------------------------------------------')
-        console.log('Character name:', resp.body[1].name)
-        console.log('Portrayed:', resp.body[1].portrayed)*/
+        inforChar.map(item => {
+          console.log('Character name:', item.name)
+          console.log('Portrayed:', item.portrayed)
+        })
+        
       }
       )
   }

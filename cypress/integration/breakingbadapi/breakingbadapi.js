@@ -5,7 +5,7 @@ import breakingBad from "../PageObject/breakingBad.js";
 const breaking = new breakingBad();
 
 Given("Get Walter White information", () => {
-  //breaking.getBirthDay();
+  breaking.getBirthDay();
 });
 
 When("Print in console birthday only", () => {
